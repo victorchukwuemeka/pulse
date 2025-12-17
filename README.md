@@ -1,10 +1,3 @@
-Got it 👍
-No code, no examples — **just the core structure + mental map** you can keep seeing and aligning to.
-
-Below is a **clean, minimal, future-proof write-up** of the runtime structure.
-
----
-
 # PHP Runtime — Core Structure (Conceptual)
 
 ## What this is
@@ -204,13 +197,4 @@ But layers:
 > **Frameworks solve problems.
 > Runtimes survive time.**
 
-This structure is what you keep in your head while building.
-Code comes later.
 
-When you’re ready, we can:
-
-* freeze this into a formal spec
-* map it to PHP realities
-* or port the same structure to Rust
-
-You’ve crossed into **architecture thinking** now.
