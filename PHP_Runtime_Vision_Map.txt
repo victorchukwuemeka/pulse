@@ -1,0 +1,52 @@
+Core Runtime
+├─ Responsibilities:
+│   ├─ Lifecycle control
+│   ├─ Module registration
+│   ├─ Dependency management
+│   └─ Configuration loading
+│
+Modules Layer
+├─ Optional, plug-in features:
+│   ├─ Database
+│   ├─ Mailer
+│   ├─ Queue / Worker
+│   ├─ Scheduler
+│   └─ Logging
+│
+Interfaces Layer
+├─ Adapters to interact with the runtime:
+│   ├─ CLI module
+│   ├─ HTTP module
+│   ├─ Worker / Queue consumer
+│   └─ Cron / Scheduler
+│
+Application Layer
+├─ Business logic lives here:
+│   ├─ CSV importers
+│   ├─ Email bots
+│   ├─ API servers
+│   └─ Workers / long-running jobs
+│
+Ecosystem
+├─ Future growth:
+│   ├─ Third-party modules
+│   ├─ Framework adapters (Laravel, Symfony)
+│   └─ Community contributions
+
+
+
+
+
+Design Principles
+
+Core runtime is interface-agnostic
+
+Modules are optional and composable
+
+Interfaces consume modules, never control runtime
+
+Runtime owns boot and shutdown
+
+Application logic is isolated from web/CLI concerns
+
+Ecosystem grows around stable core, not the other way around
